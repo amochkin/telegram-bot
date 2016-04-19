@@ -6,6 +6,20 @@ telegram-bot
 
 A Telegram Bot based on plugins using [tg](https://github.com/vysheng/tg).
 
+MacOS X Installation Manual
+---------------------------
+
+1. Install BREW from http://www.brew.sh
+2. Clone this repo using git
+3. Execute prerequisites installation:
+brew install libconfig readline lua python libevent jansson
+export CFLAGS="-I/usr/local/include -I/usr/local/Cellar/readline/6.3.8/include"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export LDFLAGS="-L/usr/local/opt/openssl/lib -L/usr/local/lib -L/usr/local/Cellar/readline/6.3.8/lib"
+4. Execute telegram-bot installation: 
+./launch.sh install
+
+
 Multimedia
 ----------
 - When user sends image (png, jpg, jpeg) URL download and send it to origin.
